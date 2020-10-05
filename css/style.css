@@ -1,0 +1,621 @@
+/************************************************* COLOR SCHEMES ***********************************************/
+/*
+Black: #0B0C10
+Dark grey: #1F2833
+Light grey: #C5C6C7
+Light turquoise: #66FCF1
+Dark turquoise: #45A29E
+Light blue: #7395AE
+Dark green blue: #557A95
+Dark red: #2E151B
+Azure Blue: #007FFF
+*/
+
+
+/************************************************* BASIC SETUP ***********************************************/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #2E151B;
+    text-transform: uppercase;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #2E151B;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 120%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2E151B;
+    text-transform: uppercase;
+    /*font-family: Candal, Lato, Arial, sans-serif;*/
+}
+
+h4 {
+    font-size: 100%;
+    text-align: center;
+    color: #2E151B;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links-text {
+    text-align: left;
+}
+
+section { padding: 60px;}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; }
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #2E151B;
+    color: #f4f4f4;
+    border-radius: 0.25rem;
+    border: 1px solid #2E151B;
+    transition: 0.2s;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #f4f4f4;
+    color: #2E151B;
+}
+
+.text-input {
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    color: #444444;
+    line-height: 1.5rem;
+    font-family: 'Lora', 'Arial', sans-serif;
+    font-size: 1.2em;
+}
+
+.maps {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+/************************************************* SECTION HEADER ***********************************************/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80px;
+    background-color: #2E151B;
+}
+
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+
+.nav-links li {list-style: none;}
+
+.nav-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 90%;
+    padding-bottom: 4px;
+}
+
+.nav-links a:link {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-links .active {
+    border-bottom: 2px solid #f4f4f4 !important;
+}
+
+.burger {display: none;}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #f4f4f4;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/************************************************* SECTION CAROUSEL ***********************************************/
+
+.carousel {position: relative;}
+
+.carousel .carousel-title {
+    text-align: center;
+    margin: 30px auto;
+    color: #444444;
+}
+
+.carousel .next {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 200%;
+    color: #2E151B;
+    cursor: pointer;
+}
+
+.carousel .prev {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 200%;
+    color: #2E151B;
+    cursor: pointer;
+}
+
+.carousel .carousel-container {
+    width: 70%;
+    height: auto;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.post {
+    width: 300px;
+    height: auto;
+    margin: 0px 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 16px 16px 16px -16px #a0a0a0;
+}
+
+.slider-image {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.post-info {
+    height: 130px;
+    padding-top: 10px;
+    padding: 10px 10px;
+}
+
+.post-info a {
+    text-decoration: none;
+    color: #2E151B;
+    font-size: 80%;
+}
+
+.post-feature {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 70%;
+}
+
+.slick-dots li {display: none;}
+
+.post-info a:link,
+.post-info a:visited {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.post-info a:hover,
+.post-info a:active {border-bottom: 2px solid #2E151B;}
+
+
+
+
+/************************************************* SECTION FEATURES ***********************************************/
+
+.section-features { 
+    background-color: white;
+    text-align: justify;
+}
+
+.description {
+    margin-bottom: 30px;
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.icon-big {
+    font-size: 400%;
+    display: inline-block;
+    width: 100%;
+    color: #2E151B;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fa-html5 { color: #DE3163}
+.fa-css3-alt { color: #007FFF}
+.fa-js { color: #FFD700 }
+.fa-ruler-combined { color: #168816 }
+
+
+
+
+/************************************************* SECTION CONTENT ***********************************************/
+
+section .content {
+    width: 75%;
+    margin: 30px auto 30px;
+}
+
+.main-content {
+    width: 70%;
+    float: left;
+}
+
+.post-title {
+    width: 95%;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.post-title img {
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.post-preview {
+    width: 60%;
+    padding: 10px;
+    float: right;
+}
+
+.post-links a:link,
+.post-links a:visited {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.post-links a:hover,
+.post-links a:active {border-bottom: 2px solid #2E151B;}
+.post-preview h3 { text-align: left;}
+.recent-post-title { margin: 20px;}
+
+.side-bar {
+    width: 30%;
+    float: left;
+    margin-top: -260px;
+}
+
+.side-bar .section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: inherit;
+}
+
+.side-bar .topics ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.side-bar .topics ul li a {
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.side-bar .topics ul li a:hover {
+    padding-left: 10px;
+    transition: all 0.3s;
+}    
+
+
+
+/************************************************* SECTION TESTIMONIALS ***********************************************/
+.section-testimonials { background-color: white; }
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+/************************************************* FOOTER ***********************************************/
+
+footer {
+    background-color: #333333;
+    padding: 40px;
+    font-size: 80%;
+    margin-top: auto;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li:link,
+.social-links li:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888888
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #dddddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+    color: #888888;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover { color: #3b5998; }
+.ion-social-twitter:hover { color: #55acee; }
+.ion-social-googleplus:hover { color: #dd4b39; }
+.ion-social-instagram:hover { color: #517fa4; }
+
+footer p {
+    color: #888888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/************************************************* FORM ***********************************************/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+.textarea { height: 100px; }
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus { outline: none; }
+
+.footer { 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/************************************************* BLOG STYLE ***********************************************/
+
+.section-blog {
+    width: 80%;
+    margin: 60px auto;
+    padding: 20px;
+    height: 120vh;
+}
+
+.left-col {
+    width: 65%;
+    margin: 0 10px;
+    background-color: white;
+    float: left;
+    border-radius: 5px;
+}
+
+.left-col h3 { 
+    padding: 20px; 
+    font-family: Candal, Arial, sans-serif;
+    letter-spacing: 5px;
+    font-size: 150%;
+}
+
+.left-col p { 
+    padding: 30px; 
+    line-height: 1.5;
+}
+
+.right-col {
+    width: 30%;
+    margin: 0 10px;
+    float: right;
+}
+
+.blog-side-bar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: inherit;
+}
+
+.blog-topics {
+    padding: 20px 0;
+}
+
+.blog-topics ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.blog-topics ul a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.blog-topics ul a:hover {
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
+

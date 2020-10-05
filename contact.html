@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linking css-->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+    
+    <!-- Linking favicon -->
+    <link rel="icon" href="/fonts/favicon.ico">
+    
+    <!-- Link to google fonts used in this project -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+    <!-- Link to fontawesome icons -->
+    <script src="https://kit.fontawesome.com/77785ace11.js" crossorigin="anonymous"></script>
+
+
+    <title>Contact us</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav>
+        <div class="logo">
+            <h1>SB Web Design</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="https://www.coursera.org/specializations/web-design">COURSES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html" class="active">CONTACT US</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- CONTACT FORM -->
+    <section>
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div clasS="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Friends</option>
+                            <option value="search">Search engine</option>
+                            <option value="ad">Advartisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Newsletter?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked>Yes, please!
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Send it!">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47234.88235877727!2d-83.76655895350378!3d42.27467771373018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae38e7de1701%3A0x5ba14e5178e997e3!2sUniversidad%20de%20M%C3%ADchigan!5e0!3m2!1ses-419!2spa!4v1601872510815!5m2!1ses-419!2spa" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <!-- SECTION FOOTER -->
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div lass="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>
+                Copyright &copy; 2020 by SB Web Design. All rights reserved.
+            </p>
+        </div>
+
+
+    </footer>
+    
+    
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Link to slick carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--Linking js-->
+    <script src="js/script.js"></script>
+</body>
+</html>
